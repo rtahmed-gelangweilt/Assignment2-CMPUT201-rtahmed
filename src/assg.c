@@ -113,7 +113,7 @@ void heap_decrease_key(MinHeap *heap, int index, int new_g, int new_h){
 void heapify_down(MinHeap *heap, int index){
     while(index< heap->size){
         int left = 2*index + 1;
-        int right = 2*index + +2;
+        int right = 2*index + 2;
         int best = index;
 
         if((left < heap->size) && priority(heap->data[left], heap->data[best])){
